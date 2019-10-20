@@ -3,6 +3,7 @@ import { Platform, StyleSheet, Text, View } from 'react-native';
 import {Image} from 'react-native'
 import BlinkApp from './components/BlinkApp'
 import StyleCom from './components/StyleCom'
+// import TextInANest from './components/TextStyle'
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -20,6 +21,7 @@ export default class App extends Component {
         <Image source={pic} style={{ width:193, height:110 }} />
         <BlinkApp />
         <StyleCom />
+        {/* <TextInANest /> */}
       </View>
     );
   }
