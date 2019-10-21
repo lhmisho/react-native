@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import { Platform, StyleSheet, Text, View } from 'react-native';
-import {Image} from 'react-native'
+import { Image } from 'react-native'
 import BlinkApp from './components/BlinkApp'
 import StyleCom from './components/StyleCom'
-// import TextInANest from './components/TextStyle'
+import TextInANest from './components/TextStyle'
+import HeightWidth from './components/HeightWidth'
+import Routes from './components/Routes'
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -17,13 +19,19 @@ export default class App extends Component {
     }
 
     return (
-      <View style={styles.container}>
-        <Image source={pic} style={{ width:193, height:110 }} />
-        <BlinkApp />
-        <StyleCom />
-        {/* <TextInANest /> */}
-      </View>
-    );
+      // <View style={styles.container}>
+      //   <Image source={pic} style={{ width: 193, height: 110 }} />
+      //   <BlinkApp />
+      //   <StyleCom />
+      //   <TextInANest />
+      //   <HeightWidth />
+      // </View>
+      // <HeightWidth />
+      // <View style={styles.container}>
+        
+      // </View>
+      <Routes />
+      );
   }
 }
 
